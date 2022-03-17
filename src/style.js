@@ -4,12 +4,14 @@ export const Logo = styled.img`
     width: 4vw;
     height: 7vh;
     margin-left: 1vw;
-    margin-top: 1vw;
+    margin-top: -12vw;
+    position: fixed;
 `
 
 export const Navegation = styled.div`
-    margin-right: 2vw;
-    margin-top: -3.5vw;
+    margin-left: 75vw;
+    margin-top: -12vw;
+    position: fixed;
 
     ul{
         display: flex;
@@ -35,15 +37,16 @@ export const Navegation = styled.div`
     }
 `
 
-export const Introduction = styled.div`
+export const IntroductionSection = styled.div`
     display: flex;
     align-items: flex-start; 
     flex-direction: column;
     margin-top: 13vw;
-    margin-left: 10vw;
+    margin-left: 5vw;
 
     h1{
         font-size: 45px;
+        color: white;
     }
 
     p{
@@ -71,21 +74,21 @@ export const Introduction = styled.div`
     }
 `
 
-export const Looper = styled.span`
-    display: flex;
-    justify-content: flex-end;
-    align-items: flex-end;
-    margin-top: -41vw;
+// export const Looper = styled.span`
+//     display: flex;
+//     justify-content: flex-end;
+//     align-items: flex-end; 
 
-  img{
-    width: 80vw;
-    height: 120vh;
-    z-index: -1;
-    opacity: 0.7;
-  }
-`
+//   img{
+//     width: 100%;
+//     height: 100vh;
+//     z-index: -2;
+//     opacity: 0.7;
+//     position: absolute;
+//   }
+// `
 
-export const AboutMe = styled.div`
+export const AboutMeSection = styled.div`
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -94,7 +97,7 @@ export const AboutMe = styled.div`
     h2{
         font-size: 3.5vw;
         color: #0F98AF;
-        margin-top: -0.7vw;
+        margin-top: 3vw;
     }
 
     img{
@@ -107,14 +110,14 @@ export const AboutMe = styled.div`
     }
 
     p{
-        margin-top: -7vw;
+        margin-top: -8vw;
         text-align: center;
         font-size: 1.7vw;
         padding: 10vw;
     }
 
     .second-row{
-        margin-top: -9.5vw;
+        margin-top: -11vw;
         width: 100%;
     }
 `
@@ -122,9 +125,9 @@ export const AboutMe = styled.div`
 
 export const ProjectSection = styled.div` 
     h3{
-        font-size: 5vw;
+        font-size: 4.5vw;
         color: #0F98AF;
-        margin-top: 5vw;
+        margin-top: 2vw;
         text-align: center;
     }
 
@@ -135,6 +138,109 @@ export const ProjectSection = styled.div`
         justify-content: center;
         gap: 3vw;
         margin-top: 5vw;
+    }
+
+    .github-img{
+        margin-top: 8vw;
+    }
+
+    hr{
+        width: 90%;
+        border: 1px solid #0F98AF;
+        margin-top: 1vw;
+        opacity: 0.3;
+    }
+`
+
+export const SkillsSection = styled.div`
+    h4{
+        font-size: 4.5vw;
+        color: #0F98AF;
+        margin-top: 2vw;
+        text-align: center;
+    }
+
+    .tecnologias-img{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        gap: 7vw;
+        margin-top: 5vw;
+    }
+
+    img{
+      width: 6vw;
+      height: 10vh;
+
+      &:hover {
+        -webkit-transform: scale(1.1);
+        transform: scale(1.1);
+        transition: 0.3s
+        }
+    }
+
+    .tecnologias-img1{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        gap: 7vw;
+        margin-top: 8vw;
+    }
+
+    img{
+      width: 6vw;
+      height: 10vh;
+
+      &:hover {
+        -webkit-transform: scale(1.1);
+        transform: scale(1.1);
+        transition: 0.3s;
+        opacity: 0.5;
+        }
+    }
+
+    .mediaqueries{
+        width: 6vw;
+        height: 14vh;
+        margin-top: -1vw;
+    }
+    
+    hr{
+        width: 90%;
+        border: 1px solid #0F98AF;
+        margin-top: 2vw;
+        opacity: 0.3;
+        border-bottom-left-radius: 5vw;
+        border-bottom-right-radius: 5vw;
+    }
+`
+
+export const ContactSection = styled.div`
+    h5{
+        font-size: 2vw;
+        color: #fff;
+        margin-top: 2vw;
+        text-align: start;
+    }
+
+    div{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 5vw;
+        margin-top: 3vw;
+    }
+
+    img{
+        &:hover {
+        -webkit-transform: scale(1.1);
+        transform: scale(1.1);
+        transition: 0.3s;
+        opacity: 0.5;
+        }
     }
 `
 
