@@ -1,14 +1,10 @@
+import GhImg from '../../assets/githublogo.png'
 import './style.css';
-import GitHublogo from '../../assets/githublogo.png';
 
-export default function GithubLink({href}) {
+export default function GitHubLink({ href }) {
     return (
-        <div>
-            <a href={href} target="_blank" rel="noreferrer">
-                <img src={GitHublogo} alt="github" />
-            </a>
-        </div>
+        <a href={href}>
+            <img src={GhImg} />
+        </a>
     )
-} 
-
-
+}

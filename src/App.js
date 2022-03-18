@@ -2,14 +2,15 @@ import './GlobalStyle/GlobalStyle.css';
 import './style.js';
 import './style.css';
 
-import GitHubLink from './Components/GithubLink';
 import Row from './Components/Row';
 import ProjectCard from './Components/ProjectCard';
+import GitHubLink from './Components/GitHubLink';
 
 import LogoImg from './assets/nano-tecnologia (1).png';
 import Curriculo from './assets/curriculo.pdf';
 import LooperImg from './assets/programming.png';
 import Diário from './assets/diario.png';
+import PedidoDeLanches from './assets/pedidolanches.png';
 import ReactImg from './assets/react.png';
 import JavaScriptImg from './assets/js.svg';
 import CssImg from './assets/css3.svg';
@@ -20,7 +21,7 @@ import WppImg from './assets/wpp.png';
 import InImg from './assets/in.png';
 import GmailImg from './assets/gmail.png';
 
-import { Logo, Navegation, IntroductionSection, AboutMeSection, ProjectSection, SkillsSection, ContactSection } from './style.js';
+import { Logo, Navegation, IntroductionSection, Looper, AboutMeSection, ProjectSection, SkillsSection, ContactSection, Footer } from './style.js';
 
 function App() {
 
@@ -46,14 +47,14 @@ function App() {
 
       <main>
         <IntroductionSection>
-          <h1 id="inicio">Olá, eu sou o <br /> Marcus!</h1>
+          <h1>Olá, eu sou o <br /> Marcus!</h1>
           <p>Desenvolvedor Front-end ▪ React | JavaScript</p>
           <a href={Curriculo} download className="download-curriculo">Download CV</a>
-          <GitHubLink href={"https://github.com/marcusvinicius0"} className="link-github" />
+          <GitHubLink />
         </IntroductionSection>
 
-          <img src={LooperImg} className='mainimg' alt='mainimg'></img>
-      
+        <Looper src={LooperImg} className='mainimg' alt='mainimg' />
+
         <AboutMeSection>
           <h2>Um pouco sobre mim</h2>
           <img src={Diário} alt="diário" />
@@ -68,7 +69,9 @@ function App() {
         <ProjectSection>
           <h3 id="projetos">Projetos</h3>
           <div className="containers">
-            <ProjectCard src={GitHubLink} />
+            <ProjectCard href={"https://github.com/marcusvinicius0/Pedido-de-lanches"}
+              alt="pedidodelanches" src={PedidoDeLanches}
+            />
             <ProjectCard />
             <ProjectCard />
             <ProjectCard />
@@ -84,12 +87,14 @@ function App() {
         <SkillsSection id="habilidades">
           <div>
             <h4>Habilidades</h4>
+            <p>- Leia a documentação -</p>
           </div>
 
           <div>
             <div className="tecnologias-img">
               <a href="https://pt-br.reactjs.org/docs/getting-started.html" target="_blank" rel="noreferrer">
-                <img src={ReactImg} alt="react" />
+                <img src={ReactImg} alt="react"></img>
+
               </a>
 
               <a href="https://developer.mozilla.org/pt-BR/docs/Web/JavaScript" target="_blank" rel="noreferrer">
@@ -119,20 +124,30 @@ function App() {
 
         <ContactSection>
           <h5>Entre em contato comigo:</h5>
-         <div>
-         <a href="https://wa.me/5534988685919" target="_blank" rel="noreferrer">
-            <img src={WppImg} alt="whatsapp" />
-          </a>
-          <a href="https://www.linkedin.com/in/marcusviniciusbeghelisantos/" target="_blank" rel="noreferrer">
-            <img src={InImg} alt="linkedin" />
-          </a>
-          <a href="mailto:marcusvbegheli@gmail.com" target="_blank" rel="noreferrer">
-            <img src={GmailImg} alt="gmail" />
-          </a>
-         </div>
-
+          <div className="contatos">
+            <a href="https://wa.me/5534988685919" target="_blank" rel="noreferrer">
+              <img src={WppImg} alt="whatsapp" />
+              <p>(34) 98868-5919</p>
+            </a>
+            <a href="https://www.linkedin.com/in/marcusviniciusbeghelisantos/" target="_blank" rel="noreferrer">
+              <img src={InImg} alt="linkedin" />
+              <p>www.linkedin.com/in/marcusviniciusbeghelisantos</p>
+            </a>
+            <a href="mailto:marcusvbegheli@gmail.com" target="_blank" rel="noreferrer">
+              <img src={GmailImg} alt="gmail" />
+              <p>marcusvbegheli@gmail.com</p>
+            </a>
+          </div>
         </ContactSection>
       </main>
+
+      <footer>
+        <Footer>
+        <hr />
+        <p>Desenvolvido por Marcus Vinícius | 2022</p>
+        </Footer>
+      </footer>
+
     </div>
   );
 }

@@ -6,12 +6,14 @@ export const Logo = styled.img`
     margin-left: 1vw;
     margin-top: -12vw;
     position: fixed;
+    z-index: 1;
 `
 
 export const Navegation = styled.div`
     margin-left: 75vw;
     margin-top: -12vw;
     position: fixed;
+    z-index: 1;
 
     ul{
         display: flex;
@@ -42,16 +44,18 @@ export const IntroductionSection = styled.div`
     align-items: flex-start; 
     flex-direction: column;
     margin-top: 13vw;
-    margin-left: 5vw;
+    margin-left: 4vw;
 
     h1{
-        font-size: 45px;
+        font-size: 50px;
         color: white;
+        z-index: 1;
     }
 
     p{
         margin-top: -1vw;
-        font-size: 20px;
+        font-size: 25px;
+        z-index: 1;
     }
 
     .download-curriculo{
@@ -66,27 +70,35 @@ export const IntroductionSection = styled.div`
         font-size: 17px;
         padding-top: 1.2vw;
         cursor: pointer;
+        z-index: 1;
     }
 
-    div{
+    img{
         margin-top: -3.3vw;
-        margin-left: 15vw;
+        margin-left: 30vw;
+        z-index: 1;
+        &:hover{
+            -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+            transition: 0.3s;
+            opacity: 0.8;
+        }
+    
     }
 `
 
-// export const Looper = styled.span`
-//     display: flex;
-//     justify-content: flex-end;
-//     align-items: flex-end; 
+export const Looper = styled.img`
+    width: 100%;
+    height: 110vh;
+    opacity: 0.4;
+    background-attachment: fixed;
+    background-size: cover;
+    margin-top: -36.6vw;
 
-//   img{
-//     width: 100%;
-//     height: 100vh;
-//     z-index: -2;
-//     opacity: 0.7;
-//     position: absolute;
-//   }
-// `
+    /* @media (min-width:1024px) and (max-width: 1115px){
+        height: 100%;
+    } */
+`
 
 export const AboutMeSection = styled.div`
     display: flex;
@@ -160,6 +172,11 @@ export const SkillsSection = styled.div`
         text-align: center;
     }
 
+    p{
+        text-align: center;
+        margin-top: -5.5vw;
+    }
+
     .tecnologias-img{
         display: flex;
         flex-direction: row;
@@ -169,10 +186,10 @@ export const SkillsSection = styled.div`
         margin-top: 5vw;
     }
 
+  
     img{
       width: 6vw;
       height: 10vh;
-
       &:hover {
         -webkit-transform: scale(1.1);
         transform: scale(1.1);
@@ -222,25 +239,50 @@ export const ContactSection = styled.div`
         font-size: 2vw;
         color: #fff;
         margin-top: 2vw;
+        margin-left: 4.7vw;
         text-align: start;
     }
 
     div{
         display: flex;
-        justify-content: center;
-        align-items: center;
+        justify-content: flex-start;
+        align-items: flex-start;
         flex-direction: column;
-        gap: 5vw;
+        gap: 30px;
         margin-top: 3vw;
     }
 
+    .contatos{
+        margin-left: 5vw;
+    }
+
+
+    a{
+        text-decoration: none;
+    }
+
     img{
-        &:hover {
-        -webkit-transform: scale(1.1);
-        transform: scale(1.1);
-        transition: 0.3s;
-        opacity: 0.5;
-        }
+        width: 3vw;
+    }
+
+    p{
+        color: white;
+        margin-left: 4vw;
+        margin-top: -2.5vw;
     }
 `
+
+export const Footer = styled.div`
+    hr{
+        margin-top: 7vw;
+        border: 1px solid gray;
+    }
+
+    p{
+        text-align: center;
+        font-size: 12px;
+    }
+`
+
+
 
