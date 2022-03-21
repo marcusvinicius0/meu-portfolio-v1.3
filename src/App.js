@@ -1,6 +1,5 @@
 import './GlobalStyle/GlobalStyle.css';
 import './style.js';
-import './style.css';
 
 import Row from './Components/Row';
 import ProjectCard from './Components/ProjectCard';
@@ -8,7 +7,7 @@ import GitHubLink from './Components/GitHubLink';
 
 import LogoImg from './assets/nano-tecnologia (1).png';
 import Curriculo from './assets/curriculo.pdf';
-import LooperImg from './assets/programming.png';
+import LooperImg from './assets/bg.jpg';
 import Diário from './assets/diario.png';
 import PedidoDeLanches from './assets/pedidolanches.png';
 import ReactImg from './assets/react.png';
@@ -21,14 +20,14 @@ import WppImg from './assets/wpp.png';
 import InImg from './assets/in.png';
 import GmailImg from './assets/gmail.png';
 
-import { Logo, Navegation, IntroductionSection, Looper, AboutMeSection, ProjectSection, SkillsSection, ContactSection, Footer } from './style.js';
+import { Logo, Navegation, IntroductionSection, MainImg, AboutMeSection, ProjectSection, SkillsSection, ContactSection, Footer } from './style.js';
 
 function App() {
 
   return (
     <div className="container">
 
-      <div>
+      <div  id="inicio">
         <Logo src={LogoImg} className="logo-img" alt="logo"></Logo>
       </div>
 
@@ -50,10 +49,10 @@ function App() {
           <h1>Olá, eu sou o <br /> Marcus!</h1>
           <p>Desenvolvedor Front-end ▪ React | JavaScript</p>
           <a href={Curriculo} download className="download-curriculo">Download CV</a>
-          <GitHubLink />
+          <GitHubLink href="https://github.com/marcusvinicius0" />
         </IntroductionSection>
 
-        <Looper src={LooperImg} className='mainimg' alt='mainimg' />
+        <MainImg src={LooperImg} className='mainimg' alt='mainimg' />
 
         <AboutMeSection>
           <h2>Um pouco sobre mim</h2>
@@ -69,9 +68,7 @@ function App() {
         <ProjectSection>
           <h3 id="projetos">Projetos</h3>
           <div className="containers">
-            <ProjectCard href={"https://github.com/marcusvinicius0/Pedido-de-lanches"}
-              alt="pedidodelanches" src={PedidoDeLanches}
-            />
+            <ProjectCard href={"https://github.com/marcusvinicius0/Pedido-de-lanches"} src={PedidoDeLanches} />
             <ProjectCard />
             <ProjectCard />
             <ProjectCard />
@@ -143,8 +140,8 @@ function App() {
 
       <footer>
         <Footer>
-        <hr />
-        <p>Desenvolvido por Marcus Vinícius | 2022</p>
+          <hr />
+          <p>Desenvolvido por Marcus Vinícius | 2022</p>
         </Footer>
       </footer>
 

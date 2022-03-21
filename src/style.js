@@ -6,14 +6,14 @@ export const Logo = styled.img`
     margin-left: 1vw;
     margin-top: -12vw;
     position: fixed;
-    z-index: 1;
+    z-index: 2;
 `
 
 export const Navegation = styled.div`
     margin-left: 75vw;
-    margin-top: -12vw;
+    margin-top: -12.5vw;
     position: fixed;
-    z-index: 1;
+    z-index: 3;
 
     ul{
         display: flex;
@@ -74,9 +74,10 @@ export const IntroductionSection = styled.div`
     }
 
     img{
-        margin-top: -3.3vw;
-        margin-left: 30vw;
+        margin-top: -3.5vw;
+        margin-left: 15vw;
         z-index: 1;
+        position: absolute;
         &:hover{
             -webkit-transform: scale(1.1);
             transform: scale(1.1);
@@ -87,17 +88,11 @@ export const IntroductionSection = styled.div`
     }
 `
 
-export const Looper = styled.img`
+export const MainImg = styled.img`
     width: 100%;
-    height: 110vh;
+    height: 100%;
     opacity: 0.4;
-    background-attachment: fixed;
-    background-size: cover;
     margin-top: -36.6vw;
-
-    /* @media (min-width:1024px) and (max-width: 1115px){
-        height: 100%;
-    } */
 `
 
 export const AboutMeSection = styled.div`
@@ -109,7 +104,8 @@ export const AboutMeSection = styled.div`
     h2{
         font-size: 3.5vw;
         color: #0F98AF;
-        margin-top: 3vw;
+        margin-top: 1vw;
+        z-index: 2;
     }
 
     img{
@@ -118,7 +114,7 @@ export const AboutMeSection = styled.div`
         transform:  rotate(20deg);
         width: 5vw;
         height: 8vh;
-        opacity: 0.9;
+        opacity: 0.6;
     }
 
     p{
@@ -253,7 +249,7 @@ export const ContactSection = styled.div`
     }
 
     .contatos{
-        margin-left: 5vw;
+        margin-left: 4.5vw;
     }
 
 
@@ -262,25 +258,27 @@ export const ContactSection = styled.div`
     }
 
     img{
-        width: 3vw;
+        width: 4vw;
     }
 
     p{
         color: white;
-        margin-left: 4vw;
+        margin-left: 5vw;
         margin-top: -2.5vw;
     }
 `
 
 export const Footer = styled.div`
     hr{
-        margin-top: 7vw;
+        margin-top: 10vw;
         border: 1px solid gray;
+        opacity: 0.3;
     }
 
     p{
         text-align: center;
         font-size: 12px;
+        margin-top: -0.3vw;
     }
 `
 

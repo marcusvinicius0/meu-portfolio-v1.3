@@ -2,3 +2,7 @@ img {
     width: 5vw;
     height: 7vh;
 }
+
+a{
+    z-index: 2;
+}
