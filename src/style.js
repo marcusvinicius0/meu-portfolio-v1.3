@@ -7,6 +7,14 @@ export const Logo = styled.img`
     margin-top: -12vw;
     position: fixed;
     z-index: 2;
+    @media (min-width: 1024px) and (max-width: 1115px){width: 5vw}
+    @media (min-width: 935px) and (max-width: 1023px){width: 5.5vw}
+    @media (min-width: 846px) and (max-width: 934px){width: 6vw}
+    @media (min-width: 757px) and (max-width: 845px){width: 7vw}
+    @media (min-width: 668px) and (max-width: 756px){width: 7vw}
+    @media (min-width: 579px) and (max-width: 667px){width: 8vw}
+    @media (min-width: 488px) and (max-width: 578px){width: 9vw}
+    @media (max-width: 487px){width: 12vw; margin-left: 3vw; margin-top: -9vw}  
 `
 
 export const Navegation = styled.div`
@@ -15,11 +23,28 @@ export const Navegation = styled.div`
     position: fixed;
     z-index: 3;
 
+  img{
+      display: none;
+      cursor: pointer;
+      @media (min-width: 757px) and (max-width: 845px){display: block; margin-left: 16vw; margin-top: 1vw}
+      @media (min-width: 668px) and (max-width: 756px){display: block; margin-left: 16vw; margin-top: 1vw}
+      @media (min-width: 577px) and (max-width: 667px){display: block; margin-left: 16vw; margin-top: 1vw}
+      @media (min-width: 488px) and (max-width: 576px){display: block; margin-left: 13vw; margin-top: 1vw; width: 6vw}
+      @media (max-width: 487px){display: block; margin-left: 10vw; margin-top: 2vw; width: 10vw}
+  }
     ul{
         display: flex;
         flex-direction: row;
         justify-content: flex-end;
         gap: 1.8vw;
+        @media (min-width: 1024px) and (max-width: 1115px){margin-left: -5vw;}
+        @media (min-width: 935px) and (max-width: 1023px){margin-left: -9vw;}
+        @media (min-width: 846px) and (max-width: 934px){margin-left: -12vw;}
+        @media (min-width: 757px) and (max-width: 845px){flex-direction: column}
+        @media (min-width: 668px) and (max-width: 756px){flex-direction: column}
+        @media (min-width: 577px) and (max-width: 667px){flex-direction: column}
+        @media (min-width: 488px) and (max-width: 576px){flex-direction: column}
+        @media (max-width: 487px){flex-direction: column}
     }
 
     li{
@@ -37,6 +62,7 @@ export const Navegation = styled.div`
         transition: color 0.3s;
         color: #0F98AF;
     }
+
 `
 
 export const IntroductionSection = styled.div`
@@ -45,17 +71,34 @@ export const IntroductionSection = styled.div`
     flex-direction: column;
     margin-top: 13vw;
     margin-left: 4vw;
+    @media (min-width: 757px) and (max-width: 845px){justify-content: center; align-items: center; text-align: center}
+    @media (min-width: 668px) and (max-width: 756px){justify-content: center; align-items: center; text-align: center}
+    @media (min-width: 577px) and (max-width: 667px){justify-content: center; align-items: center; text-align: center}
+    @media (min-width: 488px) and (max-width: 576px){justify-content: center; align-items: center; text-align: center}
+    @media (max-width: 487px){justify-content: center; align-items: center; text-align: center}
 
     h1{
         font-size: 50px;
         color: white;
         z-index: 1;
+        @media (min-width: 846px) and (max-width: 934px){font-size: 45px}
+        @media (min-width: 757px) and (max-width: 845px){font-size: 45px; margin-top: 10vw}
+        @media (min-width: 668px) and (max-width: 756px){font-size: 45px; margin-top: 10vw}
+        @media (min-width: 577px) and (max-width: 667px){font-size: 45px; margin-top: 10vw}
+        @media (min-width: 488px) and (max-width: 576px){font-size: 45px; margin-top: 10vw}
+        @media (max-width: 487px){font-size: 45px; margin-top: 30vw}
     }
 
     p{
         margin-top: -1vw;
         font-size: 25px;
         z-index: 1;
+        @media (min-width: 846px) and (max-width: 934px){font-size: 20px}
+        @media (min-width: 757px) and (max-width: 845px){font-size: 20px}
+        @media (min-width: 668px) and (max-width: 756px){font-size: 20px}
+        @media (min-width: 577px) and (max-width: 667px){font-size: 20px}
+        @media (min-width: 488px) and (max-width: 576px){font-size: 20px}
+        @media (max-width: 487px){font-size: 20px}
     }
 
     .download-curriculo{
@@ -71,6 +114,11 @@ export const IntroductionSection = styled.div`
         padding-top: 1.2vw;
         cursor: pointer;
         z-index: 1;
+        @media (min-width: 757px) and (max-width: 845px){margin-left: -10vw}
+        @media (min-width: 668px) and (max-width: 756px){margin-left: -15vw}
+        @media (min-width: 577px) and (max-width: 667px){margin-left: -15vw}
+        @media (min-width: 488px) and (max-width: 576px){margin-left: -17vw}
+        @media (max-width: 487px){margin-left: -17vw}
     }
 
     img{
@@ -84,16 +132,24 @@ export const IntroductionSection = styled.div`
             transition: 0.3s;
             opacity: 0.8;
         }
-    
+        @media (min-width: 1080px) and (max-width: 1115px){margin-top: -4.2vw; margin-left: 16vw}
+        @media (min-width: 1024px) and (max-width: 1079px){margin-top: -4.5vw; margin-left: 16vw}
+        @media (min-width: 935px) and (max-width: 1023px){margin-top: -4.5vw; margin-left: 19vw}
+        @media (min-width: 846px) and (max-width: 934px){margin-top: -5.1vw; margin-left: 22vw; width: 6vw}
+        @media (min-width: 757px) and (max-width: 845px){margin-top: -5.5vw; margin-left: 10vw; width: 7vw}
+        @media (min-width: 668px) and (max-width: 756px){margin-top: -6.2vw; margin-left: 10vw; width: 8vw}
+        @media (min-width: 577px) and (max-width: 667px){margin-top: -6.5vw; margin-left: 10vw; width: 8vw}
+        @media (min-width: 488px) and (max-width: 576px){margin-top: -8.5vw; margin-left: 17vw; width: 8vw}
+        @media (max-width: 487px){margin-top: -8.5vw; margin-left: 17vw; width: 10vw}
     }
 `
 
-export const MainImg = styled.img`
-    width: 100%;
-    height: 100%;
-    opacity: 0.4;
-    margin-top: -36.6vw;
-`
+// export const MainImg = styled.img`
+//     width: 100%;
+//     height: 100%;
+//     opacity: 0.4;
+//     margin-top: -36.6vw;
+// `
 
 export const AboutMeSection = styled.div`
     display: flex;
@@ -104,17 +160,13 @@ export const AboutMeSection = styled.div`
     h2{
         font-size: 3.5vw;
         color: #0F98AF;
-        margin-top: 1vw;
+        margin-top: 20.1vw;
         z-index: 2;
-    }
-
-    img{
-        margin-top: -5.5vw;
-        margin-left: 80vw;
-        transform:  rotate(20deg);
-        width: 5vw;
-        height: 8vh;
-        opacity: 0.6;
+        @media (min-width: 757px) and (max-width: 845px){font-size: 35px}
+        @media (min-width: 668px) and (max-width: 756px){font-size: 35px}
+        @media (min-width: 577px) and (max-width: 667px){font-size: 35px}
+        @media (min-width: 488px) and (max-width: 576px){font-size: 35px}
+        @media (max-width: 487px){font-size: 35px}
     }
 
     p{
@@ -122,6 +174,13 @@ export const AboutMeSection = styled.div`
         text-align: center;
         font-size: 1.7vw;
         padding: 10vw;
+        @media (min-width: 935px) and (max-width: 1023px){font-size: 20px}
+        @media (min-width: 846px) and (max-width: 934px){font-size: 18px}
+        @media (min-width: 757px) and (max-width: 845px){font-size: 18px}
+        @media (min-width: 668px) and (max-width: 756px){font-size: 18px}
+        @media (min-width: 577px) and (max-width: 667px){font-size: 18px}
+        @media (min-width: 488px) and (max-width: 576px){font-size: 18px}
+        @media (max-width: 487px){font-size: 18px}
     }
 
     .second-row{
@@ -137,6 +196,11 @@ export const ProjectSection = styled.div`
         color: #0F98AF;
         margin-top: 2vw;
         text-align: center;
+        @media (min-width: 757px) and (max-width: 845px){font-size: 45px}
+        @media (min-width: 668px) and (max-width: 756px){font-size: 45px}
+        @media (min-width: 577px) and (max-width: 667px){font-size: 45px}
+        @media (min-width: 488px) and (max-width: 576px){font-size: 45px}
+        @media (max-width: 487px){font-size: 45px}
     }
 
     .containers{
@@ -166,6 +230,11 @@ export const SkillsSection = styled.div`
         color: #0F98AF;
         margin-top: 2vw;
         text-align: center;
+        @media (min-width: 757px) and (max-width: 845px){font-size: 45px}
+        @media (min-width: 668px) and (max-width: 756px){font-size: 45px}
+        @media (min-width: 577px) and (max-width: 667px){font-size: 45px}
+        @media (min-width: 488px) and (max-width: 576px){font-size: 45px}
+        @media (max-width: 487px){font-size: 45px}
     }
 
     p{
@@ -182,17 +251,6 @@ export const SkillsSection = styled.div`
         margin-top: 5vw;
     }
 
-  
-    img{
-      width: 6vw;
-      height: 10vh;
-      &:hover {
-        -webkit-transform: scale(1.1);
-        transform: scale(1.1);
-        transition: 0.3s
-        }
-    }
-
     .tecnologias-img1{
         display: flex;
         flex-direction: row;
@@ -205,19 +263,29 @@ export const SkillsSection = styled.div`
     img{
       width: 6vw;
       height: 10vh;
-
       &:hover {
         -webkit-transform: scale(1.1);
         transform: scale(1.1);
         transition: 0.3s;
         opacity: 0.5;
         }
+        @media (min-width: 935px) and (max-width: 1023px){width: 8vw}
+        @media (min-width: 846px) and (max-width: 934px){width: 8vw}
+        @media (min-width: 757px) and (max-width: 845px){width: 9vw}
+        @media (min-width: 668px) and (max-width: 756px){width: 9vw}
+        @media (min-width: 577px) and (max-width: 667px){width: 9vw}
+        @media (min-width: 488px) and (max-width: 576px){width: 11vw}
+        @media (max-width: 487px){width: 11vw}
     }
 
     .mediaqueries{
         width: 6vw;
         height: 14vh;
         margin-top: -1vw;
+        @media (min-width: 668px) and (max-width: 756px){width: 9vw}
+        @media (min-width: 577px) and (max-width: 667px){width: 9vw}
+        @media (min-width: 488px) and (max-width: 576px){width: 11vw}
+        @media (max-width: 487px){width: 11vw}
     }
     
     hr{
@@ -232,11 +300,16 @@ export const SkillsSection = styled.div`
 
 export const ContactSection = styled.div`
     h5{
-        font-size: 2vw;
+        font-size: 25px;
         color: #fff;
         margin-top: 2vw;
         margin-left: 4.7vw;
         text-align: start;
+        @media (min-width: 935px) and (max-width: 1023px){font-size: 25px}
+        /* @media (min-width: 846px) and (max-width: 934px){font-size: 25px}
+        @media (min-width: 757px) and (max-width: 845px){font-size: 25px}
+        @media (min-width: 668px) and (max-width: 756px){font-size: 25px}
+        @media (min-width: 577px) and (max-width: 667px){font-size: 25px} */
     }
 
     div{
@@ -259,12 +332,32 @@ export const ContactSection = styled.div`
 
     img{
         width: 4vw;
+        @media (min-width: 1024px) and (max-width: 1115px){width: 5vw}
+        @media (min-width: 935px) and (max-width: 1023px){width: 5.5vw}
+        @media (min-width: 846px) and (max-width: 934px){width: 5.5vw}
+        @media (min-width: 757px) and (max-width: 845px){width: 7vw}
+        @media (min-width: 668px) and (max-width: 756px){width: 7vw}
+        @media (min-width: 577px) and (max-width: 667px){width: 7vw}
+        @media (min-width: 488px) and (max-width: 576px){width: 8vw}
+        @media (max-width: 487px){width: 8vw}
     }
 
     p{
         color: white;
         margin-left: 5vw;
         margin-top: -2.5vw;
+        &:hover{
+            color: #0F98AF;
+            transition: 0.3s;
+        }
+        @media (min-width: 1024px) and (max-width: 1115px){margin-top: -3vw; margin-left: 6vw}
+        @media (min-width: 935px) and (max-width: 1025px){margin-top: -3.3vw; margin-left: 7vw}
+        @media (min-width: 846px) and (max-width: 934px){margin-top: -3.7vw; margin-left: 7vw}
+        @media (min-width: 757px) and (max-width: 845px){margin-top: -3.9vw; margin-left: 9vw} 
+        @media (min-width: 668px) and (max-width: 756px){margin-top: -4vw; margin-left: 9vw}
+        @media (min-width: 577px) and (max-width: 667px){margin-top: -4vw; margin-left: 9vw}
+        @media (min-width: 488px) and (max-width: 576px){margin-top: -6vw; margin-left: 11vw}
+        @media (max-width: 487px){margin-top: -6vw; margin-left: 11vw}
     }
 `
 

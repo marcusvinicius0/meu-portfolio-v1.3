@@ -1,14 +1,15 @@
 import './GlobalStyle/GlobalStyle.css';
 import './style.js';
+import { useState } from 'react';
 
 import Row from './Components/Row';
 import ProjectCard from './Components/ProjectCard';
 import GitHubLink from './Components/GitHubLink';
 
 import LogoImg from './assets/nano-tecnologia (1).png';
+import MenuImg from './assets/menu-aberto.png';
 import Curriculo from './assets/curriculo.pdf';
 import LooperImg from './assets/bg.jpg';
-import Diário from './assets/diario.png';
 import PedidoDeLanches from './assets/pedidolanches.png';
 import ReactImg from './assets/react.png';
 import JavaScriptImg from './assets/js.svg';
@@ -24,22 +25,34 @@ import { Logo, Navegation, IntroductionSection, MainImg, AboutMeSection, Project
 
 function App() {
 
+  const [lista, setLista] = useState(true)
+
+  function exibirLista() {
+    setLista(!lista)
+    console.log("clicou")
+  }
+
   return (
     <div className="container">
 
-      <div  id="inicio">
-        <Logo src={LogoImg} className="logo-img" alt="logo"></Logo>
+      <div id="inicio">
+        <Logo src={LogoImg} className="logo-img" alt="logo"/>
       </div>
 
 
       <header>
         <Navegation>
+          <img onClick={exibirLista} src={MenuImg} alt="menu"></img>
           <nav>
-            <ul>
-              <li><a className="nav-links" href='#inicio'>Início</a></li>
-              <li><a className="nav-links" href='#projetos'>Projetos</a></li>
-              <li><a className="nav-links" href='#habilidades'>Habilidades</a></li>
-            </ul>
+           {lista ? (
+                <ul>
+                <li><a className="nav-links" href='#inicio'>Início</a></li>
+                <li><a className="nav-links" href='#projetos'>Projetos</a></li>
+                <li><a className="nav-links" href='#habilidades'>Habilidades</a></li>
+              </ul>
+           ) : (
+             ""
+           )}
           </nav>
         </Navegation>
       </header>
@@ -52,11 +65,10 @@ function App() {
           <GitHubLink href="https://github.com/marcusvinicius0" />
         </IntroductionSection>
 
-        <MainImg src={LooperImg} className='mainimg' alt='mainimg' />
+        {/* <MainImg src={LooperImg} className='mainimg' alt='mainimg' /> */}
 
         <AboutMeSection>
           <h2>Um pouco sobre mim</h2>
-          <img src={Diário} alt="diário" />
           <p>Sou uma pessoa fascinada por esse universo da tecnologia. Busco sempre fazer projetos nos quais além de me  fazer gostar do processo de desenvolvimento faz eu aprender tecnologias importantes que provaram seu valor. Atualmente faço parte de um bootcamp de programação chamado DevClub onde há módulos sobre o lado do cliente e do servidor. Tecnologias como: react.js, node.js, JavaScript, CSS, HTML são abordadas na teoria e prática com exercícios e desafios. Temos nossa comunidade onde trocamos experiência, além de ajudar e guiar membros que estão começando nessa carreira.
           </p>
           <div className='second-row'>
