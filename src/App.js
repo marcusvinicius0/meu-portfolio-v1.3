@@ -1,6 +1,6 @@
 import './GlobalStyle/GlobalStyle.css';
 import './style.js';
-import { useState } from 'react';
+import { useState, useRef } from 'react';
 
 import Row from './Components/Row';
 import ProjectCard from './Components/ProjectCard';
@@ -9,8 +9,16 @@ import GitHubLink from './Components/GitHubLink';
 import LogoImg from './assets/nano-tecnologia (1).png';
 import MenuImg from './assets/menu-aberto.png';
 import Curriculo from './assets/curriculo.pdf';
-import LooperImg from './assets/bg.jpg';
-import PedidoDeLanches from './assets/pedidolanches.png';
+import Background from './assets/Looper BG.svg';
+import pedidoDeLanches from './assets/pedidolanches.png';
+import cadastroUsuario from './assets/cadastroprojeto.png';
+import meuPortfolio from './assets/portfolioprint.png';
+import dualShock from './assets/ps5lpage.png';
+import nikeLanding from './assets/nikelandingpage.png';
+import jordanLanding from './assets/jordan.png';
+
+
+import GitHubLogo from './assets/githublogo.png';
 import ReactImg from './assets/react.png';
 import JavaScriptImg from './assets/js.svg';
 import CssImg from './assets/css3.svg';
@@ -23,36 +31,24 @@ import GmailImg from './assets/gmail.png';
 
 import { Logo, Navegation, IntroductionSection, MainImg, AboutMeSection, ProjectSection, SkillsSection, ContactSection, Footer } from './style.js';
 
+
 function App() {
-
-  const [lista, setLista] = useState(true)
-
-  function exibirLista() {
-    setLista(!lista)
-    console.log("clicou")
-  }
 
   return (
     <div className="container">
-
-      <div id="inicio">
-        <Logo src={LogoImg} className="logo-img" alt="logo"/>
-      </div>
-
-
       <header>
+        <div id="inicio">
+          <Logo src={LogoImg} className="logo-img" alt="logo" />
+        </div>
+
         <Navegation>
-          <img onClick={exibirLista} src={MenuImg} alt="menu"></img>
+          <img onClick={() => { }} src={MenuImg} alt="menu" />
           <nav>
-           {lista ? (
-                <ul>
-                <li><a className="nav-links" href='#inicio'>Início</a></li>
-                <li><a className="nav-links" href='#projetos'>Projetos</a></li>
-                <li><a className="nav-links" href='#habilidades'>Habilidades</a></li>
-              </ul>
-           ) : (
-             ""
-           )}
+            <ul>
+              <li><a className="nav-links" href='#inicio'>Início</a></li>
+              <li><a className="nav-links" href='#projetos'>Projetos</a></li>
+              <li><a className="nav-links" href='#habilidades'>Habilidades</a></li>
+            </ul>
           </nav>
         </Navegation>
       </header>
@@ -65,7 +61,7 @@ function App() {
           <GitHubLink href="https://github.com/marcusvinicius0" />
         </IntroductionSection>
 
-        {/* <MainImg src={LooperImg} className='mainimg' alt='mainimg' /> */}
+        <MainImg src={Background} className='mainimg' alt='mainimg' />
 
         <AboutMeSection>
           <h2>Um pouco sobre mim</h2>
@@ -80,15 +76,43 @@ function App() {
         <ProjectSection>
           <h3 id="projetos">Projetos</h3>
           <div className="containers">
-            <ProjectCard href={"https://github.com/marcusvinicius0/Pedido-de-lanches"} src={PedidoDeLanches} />
-            <ProjectCard />
-            <ProjectCard />
-            <ProjectCard />
-            <ProjectCard />
-            <ProjectCard />
-            <ProjectCard />
-            <ProjectCard />
-            <ProjectCard />
+            <div className="container-project">
+              <a href="https://github.com/marcusvinicius0/Pedido-de-lanches" target="_blank" rel="noreferrer"><img src={pedidoDeLanches} /></a>
+              <p>Pedido de lanches -  <br /> <strong>Feito com react.js, node.js.</strong></p>
+              <a href='https://github.com/marcusvinicius0/Pedido-de-lanches' target="_blank" rel="noreferrer"><img className="githublogo" src={GitHubLogo} alt="github-icon" /></a>
+            </div>
+
+            <div className="container-project">
+              <a href="https://github.com/marcusvinicius0/Cadastro-de-Usuarios-FRONTEND" target="_blank" rel="noreferrer"><img src={cadastroUsuario} /></a>
+              <p>Cadastro de usuários - <br /> <strong>Feito com react.js, node.js.</strong></p>
+              <a href='https://github.com/marcusvinicius0/Cadastro-de-Usuarios-FRONTEND' target="_blank" rel="noreferrer"><img className="githublogo" src={GitHubLogo} alt="github-icon" /></a>
+            </div>
+
+            <div className="container-project">
+              <a href="" target="_blank" rel="noreferrer"><img src={meuPortfolio} /></a>
+              <p>Meu portfólio -  <br /> <strong>Feito com react.js.</strong></p>
+              <a href='' target="_blank" rel="noreferrer"><img className="githublogo" src={GitHubLogo} alt="github-icon" /></a>
+            </div>
+
+            <div className="container-project">
+              <a href="https://marcusvinicius0.github.io/playstation-project/" target="_blank" rel="noreferrer"><img src={dualShock} /></a>
+              <p>Dualshock landing page - <br /> <strong>Feito com HTML, CSS, JS.</strong></p>
+              <a href='https://github.com/marcusvinicius0/playstation-project' target="_blank" rel="noreferrer"><img className="githublogo" src={GitHubLogo} alt="github-icon" /></a>
+            </div>
+
+            <div className="container-project">
+              <a href="https://marcusvinicius0.github.io/Landing-Page-Nike/" target="_blank" rel="noreferrer"><img src={nikeLanding} /></a>
+              <p>Nike landing page - <br /> <strong>Feito com HTML, CSS.</strong></p>
+              <a href='https://github.com/marcusvinicius0/Landing-Page-Nike' target="_blank" rel="noreferrer"><img className="githublogo" src={GitHubLogo} alt="github-icon" /></a>
+            </div>
+
+            <div className="container-project">
+              <a href="https://marcusvinicius0.github.io/Landing-Page-Jordan/" target="_blank" rel="noreferrer"><img src={jordanLanding} /></a>
+              <p>Jordan landing page - <br /> <strong>Feito com HTML, CSS.</strong></p>
+              <a href='https://github.com/marcusvinicius0/Landing-Page-Jordan' target="_blank" rel="noreferrer"><img className="githublogo" src={GitHubLogo} alt="github-icon" /></a>
+            </div>
+
+
           </div>
           <hr />
         </ProjectSection>
@@ -162,3 +186,4 @@ function App() {
 }
 
 export default App;
+

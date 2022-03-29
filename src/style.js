@@ -18,7 +18,7 @@ export const Logo = styled.img`
 `
 
 export const Navegation = styled.div`
-    margin-left: 75vw;
+    margin-left: 73vw;
     margin-top: -12.5vw;
     position: fixed;
     z-index: 3;
@@ -40,11 +40,7 @@ export const Navegation = styled.div`
         @media (min-width: 1024px) and (max-width: 1115px){margin-left: -5vw;}
         @media (min-width: 935px) and (max-width: 1023px){margin-left: -9vw;}
         @media (min-width: 846px) and (max-width: 934px){margin-left: -12vw;}
-        @media (min-width: 757px) and (max-width: 845px){flex-direction: column}
-        @media (min-width: 668px) and (max-width: 756px){flex-direction: column}
-        @media (min-width: 577px) and (max-width: 667px){flex-direction: column}
-        @media (min-width: 488px) and (max-width: 576px){flex-direction: column}
-        @media (max-width: 487px){flex-direction: column}
+        @media (max-width: 845px){display: none; flex-direction: column}
     }
 
     li{
@@ -78,7 +74,7 @@ export const IntroductionSection = styled.div`
     @media (max-width: 487px){justify-content: center; align-items: center; text-align: center}
 
     h1{
-        font-size: 50px;
+        font-size: 45px;
         color: white;
         z-index: 1;
         @media (min-width: 846px) and (max-width: 934px){font-size: 45px}
@@ -91,7 +87,7 @@ export const IntroductionSection = styled.div`
 
     p{
         margin-top: -1vw;
-        font-size: 25px;
+        font-size: 20px;
         z-index: 1;
         @media (min-width: 846px) and (max-width: 934px){font-size: 20px}
         @media (min-width: 757px) and (max-width: 845px){font-size: 20px}
@@ -129,7 +125,7 @@ export const IntroductionSection = styled.div`
         &:hover{
             -webkit-transform: scale(1.1);
             transform: scale(1.1);
-            transition: 0.3s;
+            transition: 0.6s;
             opacity: 0.8;
         }
         @media (min-width: 1080px) and (max-width: 1115px){margin-top: -4.2vw; margin-left: 16vw}
@@ -144,12 +140,12 @@ export const IntroductionSection = styled.div`
     }
 `
 
-// export const MainImg = styled.img`
-//     width: 100%;
-//     height: 100%;
-//     opacity: 0.4;
-//     margin-top: -36.6vw;
-// `
+export const MainImg = styled.img`
+    width: 100%;
+    height: 100%;
+    opacity: 1;
+    margin-top: -44vw;
+`
 
 export const AboutMeSection = styled.div`
     display: flex;
@@ -160,7 +156,7 @@ export const AboutMeSection = styled.div`
     h2{
         font-size: 3.5vw;
         color: #0F98AF;
-        margin-top: 20.1vw;
+        margin-top: 0vw;
         z-index: 2;
         @media (min-width: 757px) and (max-width: 845px){font-size: 35px}
         @media (min-width: 668px) and (max-width: 756px){font-size: 35px}
@@ -211,6 +207,47 @@ export const ProjectSection = styled.div`
         gap: 3vw;
         margin-top: 5vw;
     }
+
+    .container-project{
+    width: 315px;
+    height: 340px;
+    background: #121212;
+    box-shadow: 0 0.5rem 1rem rgb(0 0 0 / 15%);
+    color: white;
+    text-align: center;
+    font-size: 15px;  
+    margin-bottom: 1vw;
+
+    img{
+        width: 315px;
+        height: 292px;
+        opacity: 0.9;
+    }
+
+    p{
+        text-align: start;
+        margin-top: 0.4vw;
+        padding-left: 1vw;
+        color: #0F98AF;
+    }
+
+    strong{
+        color: #FFF;
+    }
+
+    .githublogo{
+        width: 3vw;
+        height: 5vh;
+        position: absolute;
+        margin-left: 8vw;
+        margin-top: -3.7vw;
+        &:hover {
+        -webkit-transform: scale(1.1);
+        transform: scale(1.1);
+        transition: 0.3s
+}
+    }
+}
 
     .github-img{
         margin-top: 8vw;
