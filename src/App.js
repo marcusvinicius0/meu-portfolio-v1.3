@@ -102,7 +102,7 @@ function App() {
             <div className="container-project">
               <a href="/" target="_blank" rel="noreferrer"><img src={meuPortfolio} alt="meu-portfolio" /></a>
               <p>Meu portfólio -  <br /> <strong>Feito com react.js.</strong></p>
-              <a href='/' target="_blank" rel="noreferrer"><img className="githublogo" src={GitHubLogo} alt="github-icon" /></a>
+              <a href='https://github.com/marcusvinicius0/meu-portfolio-v1.3' target="_blank" rel="noreferrer"><img className="githublogo" src={GitHubLogo} alt="github-icon" /></a>
             </div>
 
             <div className="container-project">
