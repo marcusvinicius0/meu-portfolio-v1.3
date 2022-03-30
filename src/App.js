@@ -161,7 +161,7 @@ function App() {
           <div className="contatos">
             <a href="https://wa.me/5534988685919" target="_blank" rel="noreferrer">
               <img src={WppImg} alt="whatsapp" />
-              <p>(34) 98868-5919</p>
+              <p>+55 (34) 98868-5919</p>
             </a>
             <a href="https://www.linkedin.com/in/marcusviniciusbeghelisantos/" target="_blank" rel="noreferrer">
               <img src={InImg} alt="linkedin" />

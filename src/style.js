@@ -115,8 +115,12 @@ export const IntroductionSection = styled.div`
         @media (max-width: 487px){margin-left: -17vw}
 
         p{
-            padding-top: 1.8vw;
+            padding-top: 2vw;
             font-size: 18px;
+            @media (min-width: 846px) and (max-width: 934px){padding-top: 2.5vw}
+            @media (min-width: 757px) and (max-width: 845px){padding-top: 2.5vw}
+            @media (min-width: 668px) and (max-width: 756px){padding-top: 2.5vw}
+            @media (min-width: 577px) and (max-width: 667px){padding-top: 3vw}
             @media (min-width: 488px) and (max-width: 576px){padding-top: 3.5vw};
             @media (max-width: 487px){padding-top: 3.5vw};
         }
@@ -139,9 +143,9 @@ export const IntroductionSection = styled.div`
         @media (min-width: 846px) and (max-width: 934px){margin-top: -5.1vw; margin-left: 22vw; width: 6vw}
         @media (min-width: 757px) and (max-width: 845px){margin-top: -5.5vw; margin-left: 10vw; width: 7vw}
         @media (min-width: 668px) and (max-width: 756px){margin-top: -6.2vw; margin-left: 10vw; width: 8vw}
-        @media (min-width: 577px) and (max-width: 667px){margin-top: -6.5vw; margin-left: 10vw; width: 8vw}
+        @media (min-width: 577px) and (max-width: 667px){margin-top: -8.5vw; margin-left: 14vw; width: 9vw}
         @media (min-width: 488px) and (max-width: 576px){margin-top: -10vw; margin-left: 13vw; width: 10vw}
-        @media (max-width: 487px){margin-top: -10vw; margin-left: 15vw; width: 10vw}
+        @media (max-width: 487px){margin-top: -11.5vw; margin-left: 19vw; width: 12vw}
     }
 `
 
@@ -164,7 +168,7 @@ export const AboutMeSection = styled.div`
     }
 
     p{
-        margin-top: -10vw;
+        margin-top: -11vw;
         text-align: center;
         font-size: 18px;
         padding: 10vw;
@@ -238,13 +242,26 @@ export const ProjectSection = styled.div`
             width: 3vw;
             height: 5vh;
             position: absolute;
+            background-size: cover;
             margin-left: 8vw;
             margin-top: -4vw;
+            @media (min-width: 1080px) and (max-width: 1115px){margin-left: 10vw; margin-top: -5vw; width: 3.5vw}
+            @media (min-width: 1024px) and (max-width: 1079px){margin-left: 10vw; margin-top: -5.3vw; width: 3.5vw}
+            @media (min-width: 935px) and (max-width: 1023px){margin-left: 11.5vw; margin-top: -5.4vw; width: 3.5vw}
+            @media (min-width: 870px) and (max-width: 934px){margin-left: 13vw; margin-top: -5.9vw; width: 3.5vw }
+            @media (min-width: 805px) and (max-width: 869px){margin-left: 14vw; margin-top: -7.2vw; width: 4vw}
+            @media (min-width: 750px) and (max-width: 804px){margin-left: 15vw; margin-top: -7.5vw; width: 4vw}
+            @media (min-width: 700px) and (max-width: 749px){margin-left: 16vw; margin-top: -8vw; width: 4.5vw}
+            @media (min-width: 650px) and (max-width: 699px){margin-left: 17vw; margin-top: -8.5vw; width: 5vw}
+            @media (min-width: 600px) and (max-width: 649px){margin-left: 18vw; margin-top: -9vw; width: 5.5vw}
+            @media (min-width: 550px) and (max-width: 599px){margin-left: 19vw; margin-top: -9.5vw; width: 6vw}
+            @media (min-width: 500px) and (max-width: 549px){margin-left: 21vw; margin-top: -10.8vw; width: 6.5vw}
+            @media (min-width: 450px) and (max-width: 499px){margin-left: 23vw; margin-top: -12vw; width: 7vw}
+            @media (max-width: 449px){margin-left: 26vw; margin-top: -13.5vw; width: 8vw}
             &:hover {
             -webkit-transform: scale(1.1);
             transform: scale(1.1);
             transition: 0.3s;
-            @media (min-width: 950px) and (max-width: 1115px){margin-left: 5vw}  
         }
     }
 }
@@ -272,6 +289,7 @@ export const SkillsSection = styled.div`
     p{
         text-align: center;
         margin-top: -5.5vw;
+        @media (max-width: 487px){margin-top: -14vw; margin-bottom: 18vw}
     }
 
     .tecnologias-img{
@@ -298,7 +316,7 @@ export const SkillsSection = styled.div`
       &:hover {
         -webkit-transform: scale(1.1);
         transform: scale(1.1);
-        transition: 0.3s;
+        transition: 0.5s;
         opacity: 0.5;
         }
         @media (min-width: 935px) and (max-width: 1023px){width: 8vw}
@@ -307,7 +325,7 @@ export const SkillsSection = styled.div`
         @media (min-width: 668px) and (max-width: 756px){width: 9vw}
         @media (min-width: 577px) and (max-width: 667px){width: 9vw}
         @media (min-width: 488px) and (max-width: 576px){width: 11vw}
-        @media (max-width: 487px){width: 11vw}
+        @media (max-width: 487px){width: 14vw}
     }
 
     .mediaqueries{
@@ -317,7 +335,7 @@ export const SkillsSection = styled.div`
         @media (min-width: 668px) and (max-width: 756px){width: 9vw}
         @media (min-width: 577px) and (max-width: 667px){width: 9vw}
         @media (min-width: 488px) and (max-width: 576px){width: 11vw}
-        @media (max-width: 487px){width: 11vw}
+        @media (max-width: 487px){width: 13vw}
     }
     
     hr{
@@ -370,7 +388,7 @@ export const ContactSection = styled.div`
         @media (min-width: 668px) and (max-width: 756px){width: 7vw}
         @media (min-width: 577px) and (max-width: 667px){width: 7vw}
         @media (min-width: 488px) and (max-width: 576px){width: 8vw}
-        @media (max-width: 487px){width: 8vw}
+        @media (max-width: 487px){width: 10vw}
     }
 
     p{
@@ -381,14 +399,14 @@ export const ContactSection = styled.div`
             color: #0F98AF;
             transition: 0.3s;
         }
-        @media (min-width: 1024px) and (max-width: 1115px){margin-top: -3vw; margin-left: 6vw}
+        @media (min-width: 1024px) and (max-width: 1115px){margin-top: -3.5vw; margin-left: 6vw}
         @media (min-width: 935px) and (max-width: 1025px){margin-top: -3.3vw; margin-left: 7vw}
         @media (min-width: 846px) and (max-width: 934px){margin-top: -3.7vw; margin-left: 7vw}
         @media (min-width: 757px) and (max-width: 845px){margin-top: -3.9vw; margin-left: 9vw} 
-        @media (min-width: 668px) and (max-width: 756px){margin-top: -4vw; margin-left: 9vw}
-        @media (min-width: 577px) and (max-width: 667px){margin-top: -4vw; margin-left: 9vw}
+        @media (min-width: 668px) and (max-width: 756px){margin-top: -5vw; margin-left: 9vw}
+        @media (min-width: 577px) and (max-width: 667px){margin-top: -6vw; margin-left: 9vw}
         @media (min-width: 488px) and (max-width: 576px){margin-top: -7vw; margin-left: 12vw; font-size: 13px}
-        @media (max-width: 487px){margin-top: -6vw; margin-left: 11vw; font-size: 13px}
+        @media (max-width: 487px){margin-top: -8.5vw; margin-left: 12vw; font-size: 13px}
     }
 `
 
