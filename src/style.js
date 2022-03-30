@@ -26,9 +26,9 @@ export const Navegation = styled.div`
   img{
       display: none;
       cursor: pointer;
-      @media (min-width: 757px) and (max-width: 845px){display: block; margin-left: 16vw; margin-top: 1vw}
-      @media (min-width: 668px) and (max-width: 756px){display: block; margin-left: 16vw; margin-top: 1vw}
-      @media (min-width: 577px) and (max-width: 667px){display: block; margin-left: 16vw; margin-top: 1vw}
+      @media (min-width: 757px) and (max-width: 845px){display: block; margin-left: 16vw; margin-top: 1vw; width: 6vw}
+      @media (min-width: 668px) and (max-width: 756px){display: block; margin-left: 16vw; margin-top: 1vw; width: 6vw}
+      @media (min-width: 577px) and (max-width: 667px){display: block; margin-left: 16vw; margin-top: 1vw; width: 6vw}
       @media (min-width: 488px) and (max-width: 576px){display: block; margin-left: 13vw; margin-top: 1vw; width: 6vw}
       @media (max-width: 487px){display: block; margin-left: 10vw; margin-top: 2vw; width: 10vw}
   }
@@ -126,9 +126,11 @@ export const IntroductionSection = styled.div`
         }
     }
 
-    img{
+    .githublogo{
         margin-top: -3.5vw;
         margin-left: 15vw;
+        width: 6vw;
+        height: 3.5vw;
         z-index: 1;
         position: absolute;
         &:hover{
@@ -137,15 +139,15 @@ export const IntroductionSection = styled.div`
             transition: 0.7s;
             opacity: 0.8;
         }
-        @media (min-width: 1080px) and (max-width: 1115px){margin-top: -4.2vw; margin-left: 16vw}
-        @media (min-width: 1024px) and (max-width: 1079px){margin-top: -4.5vw; margin-left: 16vw}
-        @media (min-width: 935px) and (max-width: 1023px){margin-top: -4.5vw; margin-left: 19vw}
-        @media (min-width: 846px) and (max-width: 934px){margin-top: -5.1vw; margin-left: 22vw; width: 6vw}
-        @media (min-width: 757px) and (max-width: 845px){margin-top: -5.5vw; margin-left: 10vw; width: 7vw}
-        @media (min-width: 668px) and (max-width: 756px){margin-top: -6.2vw; margin-left: 10vw; width: 8vw}
-        @media (min-width: 577px) and (max-width: 667px){margin-top: -8.5vw; margin-left: 14vw; width: 9vw}
-        @media (min-width: 488px) and (max-width: 576px){margin-top: -10vw; margin-left: 13vw; width: 10vw}
-        @media (max-width: 487px){margin-top: -11.5vw; margin-left: 19vw; width: 12vw}
+        @media (min-width: 1080px) and (max-width: 1115px){margin-top: -4.2vw; margin-left: 16vw; width: 7vw; height: 7vh}
+        @media (min-width: 1024px) and (max-width: 1079px){margin-top: -4.5vw; margin-left: 16vw; width: 8vw; height: 7vh}
+        @media (min-width: 935px) and (max-width: 1023px){margin-top: -4.5vw; margin-left: 19vw; width: 8vw; height: 7vh}
+        @media (min-width: 846px) and (max-width: 934px){margin-top: -5.1vw; margin-left: 22vw; width: 9vw; height: 7vh}
+        @media (min-width: 757px) and (max-width: 845px){margin-top: -5.5vw; margin-left: 10vw; width: 10vw; height: 7vh}
+        @media (min-width: 668px) and (max-width: 756px){margin-top: -6.2vw; margin-left: 10vw; width: 10vw; height: 7vh}
+        @media (min-width: 577px) and (max-width: 667px){margin-top: -8vw; margin-left: 13vw; width: 10vw; height: 7vh}
+        @media (min-width: 488px) and (max-width: 576px){margin-top: -9vw; margin-left: 13vw; width: 10vw; height: 7vh}
+        @media (max-width: 487px){margin-top: -11vw; margin-left: 19vw; width: 12vw; height: 7vh}
     }
 `
 

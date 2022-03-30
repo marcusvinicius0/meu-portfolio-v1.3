@@ -3,7 +3,6 @@ import './style.js';
 import { useState, useRef } from 'react';
 
 import Row from './Components/Row';
-import GitHubLink from './Components/GitHubLink';
 
 import LogoImg from './assets/nano-tecnologia (1).png';
 import MenuImg from './assets/menu-aberto.png';
@@ -57,7 +56,7 @@ function App() {
           <h1>Olá, eu sou o <br /> Marcus!</h1>
           <p>Desenvolvedor Front-end ▪ React | JavaScript</p>
           <a href={Curriculo} download className="download-curriculo"><p>Download CV</p></a>
-          <GitHubLink href="https://github.com/marcusvinicius0" />
+          <a href='https://github.com/marcusvinicius0' target="_blank" rel="noreferrer"><img className="githublogo" src={GitHubLogo} alt="github-icon" /></a>
         </IntroductionSection>
 
         <div className="mainimg">
