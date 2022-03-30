@@ -1,0 +1,19 @@
+/* // import styled from 'styled-components';
+
+
+// export const Navegation = styled.div`
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+//     flex-direction: column;
+
+//     nav, ul{
+//         margin-top: -40vw;
+//     }
+// ` */
+
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

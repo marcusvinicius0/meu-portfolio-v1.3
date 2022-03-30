@@ -24,7 +24,8 @@ export const Navegation = styled.div`
     z-index: 3;
 
   img{
-      display: none;
+     width: 3.5vw;
+     margin-left: 18vw;
       cursor: pointer;
       @media (min-width: 757px) and (max-width: 845px){display: block; margin-left: 16vw; margin-top: 1vw; width: 6vw}
       @media (min-width: 668px) and (max-width: 756px){display: block; margin-left: 16vw; margin-top: 1vw; width: 6vw}
@@ -34,15 +35,22 @@ export const Navegation = styled.div`
   }
     ul{
         display: flex;
-        flex-direction: row;
-        justify-content: flex-end;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-left: 13vw;
         gap: 1.8vw;
-        @media (min-width: 1024px) and (max-width: 1115px){margin-left: -5vw;}
-        @media (min-width: 935px) and (max-width: 1023px){margin-left: -9vw;}
-        @media (min-width: 846px) and (max-width: 934px){margin-left: -12vw;}
-        @media (max-width: 845px){display: none; flex-direction: column}
+        @media (min-width: 1024px) and (max-width: 1115px){margin-left: -5vw;  justify-content: flex-start; align-items:flex-start; margin-left: 10vw; font-size: 15px}
+        @media (min-width: 935px) and (max-width: 1023px){margin-left: 9vw; justify-content: flex-start; align-items: flex-start}
+        @media (min-width: 846px) and (max-width: 934px){margin-left: 9vw; justify-content: flex-start; align-items: flex-start}
+        @media (min-width: 757px) and (max-width: 845px){ flex-direction: column; justify-content: flex-start; align-items: flex-start; margin-left: 3vw; font-size: 10px;}
+        @media (min-width: 668px) and (max-width: 756px){ flex-direction: column; justify-content: flex-start; align-items: flex-start; margin-left: 2vw; font-size: 10px;}
+        @media (min-width: 579px) and (max-width: 667px){ flex-direction: column; justify-content: flex-start; align-items: flex-start; margin-left: -3vw; font-size: 10px;}
+        @media (min-width: 488px) and (max-width: 578px){ flex-direction: column; justify-content: flex-start; align-items: flex-start; margin-left: -9vw; font-size: 10px;}
+        @media (max-width: 487px){ flex-direction: column; justify-content: flex-start; align-items: flex-start; margin-left: -14vw; font-size: 10px;}
     }
 
+   
     li{
         list-style-type: none;
     }
@@ -59,6 +67,7 @@ export const Navegation = styled.div`
         color: #0F98AF;
     }
 
+}
 `
 
 export const IntroductionSection = styled.div`
@@ -80,8 +89,8 @@ export const IntroductionSection = styled.div`
         @media (min-width: 846px) and (max-width: 934px){font-size: 45px}
         @media (min-width: 757px) and (max-width: 845px){font-size: 45px; margin-top: 10vw}
         @media (min-width: 668px) and (max-width: 756px){font-size: 45px; margin-top: 10vw}
-        @media (min-width: 577px) and (max-width: 667px){font-size: 45px; margin-top: 10vw}
-        @media (min-width: 488px) and (max-width: 576px){font-size: 40px; margin-top: 10vw}
+        @media (min-width: 577px) and (max-width: 667px){font-size: 45px; margin-top: 20vw}
+        @media (min-width: 488px) and (max-width: 576px){font-size: 40px; margin-top: 20vw}
         @media (max-width: 487px){font-size: 40px; margin-top: 30vw}
     }
 
@@ -129,7 +138,7 @@ export const IntroductionSection = styled.div`
     .githublogo{
         margin-top: -3.5vw;
         margin-left: 15vw;
-        width: 6vw;
+        width: 4vw;
         height: 3.5vw;
         z-index: 1;
         position: absolute;
@@ -139,14 +148,14 @@ export const IntroductionSection = styled.div`
             transition: 0.7s;
             opacity: 0.8;
         }
-        @media (min-width: 1080px) and (max-width: 1115px){margin-top: -4.2vw; margin-left: 16vw; width: 7vw; height: 7vh}
-        @media (min-width: 1024px) and (max-width: 1079px){margin-top: -4.5vw; margin-left: 16vw; width: 8vw; height: 7vh}
-        @media (min-width: 935px) and (max-width: 1023px){margin-top: -4.5vw; margin-left: 19vw; width: 8vw; height: 7vh}
-        @media (min-width: 846px) and (max-width: 934px){margin-top: -5.1vw; margin-left: 22vw; width: 9vw; height: 7vh}
-        @media (min-width: 757px) and (max-width: 845px){margin-top: -5.5vw; margin-left: 10vw; width: 10vw; height: 7vh}
-        @media (min-width: 668px) and (max-width: 756px){margin-top: -6.2vw; margin-left: 10vw; width: 10vw; height: 7vh}
-        @media (min-width: 577px) and (max-width: 667px){margin-top: -8vw; margin-left: 13vw; width: 10vw; height: 7vh}
-        @media (min-width: 488px) and (max-width: 576px){margin-top: -9vw; margin-left: 13vw; width: 10vw; height: 7vh}
+        @media (min-width: 1080px) and (max-width: 1115px){margin-top: -4.2vw; margin-left: 16vw; width: 5vw; height: 7vh}
+        @media (min-width: 1024px) and (max-width: 1079px){margin-top: -4.5vw; margin-left: 16vw; width: 5vw; height: 7vh}
+        @media (min-width: 935px) and (max-width: 1023px){margin-top: -4.5vw; margin-left: 19vw; width: 5vw; height: 7vh}
+        @media (min-width: 846px) and (max-width: 934px){margin-top: -5.1vw; margin-left: 22vw; width: 7vw; height: 7vh}
+        @media (min-width: 757px) and (max-width: 845px){margin-top: -5.5vw; margin-left: 10vw; width: 7vw; height: 7vh}
+        @media (min-width: 668px) and (max-width: 756px){margin-top: -6.2vw; margin-left: 10vw; width: 8vw; height: 7vh}
+        @media (min-width: 577px) and (max-width: 667px){margin-top: -8vw; margin-left: 13vw; width: 8vw; height: 7vh}
+        @media (min-width: 488px) and (max-width: 576px){margin-top: -9vw; margin-left: 13vw; width: 9vw; height: 7vh}
         @media (max-width: 487px){margin-top: -11vw; margin-left: 19vw; width: 12vw; height: 7vh}
     }
 `

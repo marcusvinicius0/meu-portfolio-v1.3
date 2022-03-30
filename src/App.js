@@ -1,8 +1,10 @@
 import './GlobalStyle/GlobalStyle.css';
 import './style.js';
-import { useState, useRef } from 'react';
+import { useState, useEffect } from 'react';
 
 import Row from './Components/Row';
+
+// import NavBar from './Components/NavBar';
 
 import LogoImg from './assets/nano-tecnologia (1).png';
 import MenuImg from './assets/menu-aberto.png';
@@ -31,6 +33,11 @@ import { Logo, Navegation, IntroductionSection, AboutMeSection, ProjectSection, 
 
 
 function App() {
+  const [exibir, setExibir] = useState(false);
+
+  function exibirMenu() {
+    setExibir(!exibir)
+  }
 
   return (
     <div className="container">
@@ -40,13 +47,17 @@ function App() {
         </div>
 
         <Navegation>
-          <img onClick={() => { }} src={MenuImg} alt="menu" />
+          <img onClick={exibirMenu} src={MenuImg} alt="menu" />
           <nav>
-            <ul>
-              <li><a className="nav-links" href='#inicio'>Início</a></li>
-              <li><a className="nav-links" href='#projetos'>Projetos</a></li>
-              <li><a className="nav-links" href='#habilidades'>Habilidades</a></li>
-            </ul>
+            {exibir ? (
+              <ul>
+                <li><a className="nav-links" href='/'>Início</a></li>
+                <li><a className="nav-links" href='#projetos'>Projetos</a></li>
+                <li><a className="nav-links" href='#habilidades'>Habilidades</a></li>
+              </ul>
+            ) : (
+              ""
+            )}
           </nav>
         </Navegation>
       </header>
@@ -60,7 +71,7 @@ function App() {
         </IntroductionSection>
 
         <div className="mainimg">
-          <img className="img" src={Background} />
+          <img className="img" src={Background} alt="background" />
         </div>
 
         <AboutMeSection>
@@ -77,37 +88,37 @@ function App() {
           <h3 id="projetos">Projetos</h3>
           <div className="containers">
             <div className="container-project">
-              <a href="https://github.com/marcusvinicius0/Pedido-de-lanches" target="_blank" rel="noreferrer"><img src={pedidoDeLanches} /></a>
+              <a href="https://github.com/marcusvinicius0/Pedido-de-lanches" target="_blank" rel="noreferrer"><img src={pedidoDeLanches} alt="pedido-lanches" /></a>
               <p>Pedido de lanches -  <br /> <strong>Feito com react.js, node.js.</strong></p>
               <a href='https://github.com/marcusvinicius0/Pedido-de-lanches' target="_blank" rel="noreferrer"><img className="githublogo" src={GitHubLogo} alt="github-icon" /></a>
             </div>
 
             <div className="container-project">
-              <a href="https://github.com/marcusvinicius0/Cadastro-de-Usuarios-FRONTEND" target="_blank" rel="noreferrer"><img src={cadastroUsuario} /></a>
+              <a href="https://github.com/marcusvinicius0/Cadastro-de-Usuarios-FRONTEND" target="_blank" rel="noreferrer"><img src={cadastroUsuario} alt="cadastro-usuario" /></a>
               <p>Cadastro de usuários - <br /> <strong>Feito com react.js, node.js.</strong></p>
               <a href='https://github.com/marcusvinicius0/Cadastro-de-Usuarios-FRONTEND' target="_blank" rel="noreferrer"><img className="githublogo" src={GitHubLogo} alt="github-icon" /></a>
             </div>
 
             <div className="container-project">
-              <a href="" target="_blank" rel="noreferrer"><img src={meuPortfolio} /></a>
+              <a href="/" target="_blank" rel="noreferrer"><img src={meuPortfolio} alt="meu-portfolio" /></a>
               <p>Meu portfólio -  <br /> <strong>Feito com react.js.</strong></p>
-              <a href='' target="_blank" rel="noreferrer"><img className="githublogo" src={GitHubLogo} alt="github-icon" /></a>
+              <a href='/' target="_blank" rel="noreferrer"><img className="githublogo" src={GitHubLogo} alt="github-icon" /></a>
             </div>
 
             <div className="container-project">
-              <a href="https://marcusvinicius0.github.io/playstation-project/" target="_blank" rel="noreferrer"><img src={dualShock} /></a>
+              <a href="https://marcusvinicius0.github.io/playstation-project/" target="_blank" rel="noreferrer"><img src={dualShock} alt="dualshock" /></a>
               <p>Dualshock landing page - <br /> <strong>Feito com HTML, CSS, JS.</strong></p>
               <a href='https://github.com/marcusvinicius0/playstation-project' target="_blank" rel="noreferrer"><img className="githublogo" src={GitHubLogo} alt="github-icon" /></a>
             </div>
 
             <div className="container-project">
-              <a href="https://marcusvinicius0.github.io/Landing-Page-Nike/" target="_blank" rel="noreferrer"><img src={nikeLanding} /></a>
+              <a href="https://marcusvinicius0.github.io/Landing-Page-Nike/" target="_blank" rel="noreferrer"><img src={nikeLanding} alt="nike-landingpage" /></a>
               <p>Nike landing page - <br /> <strong>Feito com HTML, CSS.</strong></p>
               <a href='https://github.com/marcusvinicius0/Landing-Page-Nike' target="_blank" rel="noreferrer"><img className="githublogo" src={GitHubLogo} alt="github-icon" /></a>
             </div>
 
             <div className="container-project">
-              <a href="https://marcusvinicius0.github.io/Landing-Page-Jordan/" target="_blank" rel="noreferrer"><img src={jordanLanding} /></a>
+              <a href="https://marcusvinicius0.github.io/Landing-Page-Jordan/" target="_blank" rel="noreferrer"><img src={jordanLanding} alt="jordan-landingpage" /></a>
               <p>Jordan landing page - <br /> <strong>Feito com HTML, CSS.</strong></p>
               <a href='https://github.com/marcusvinicius0/Landing-Page-Jordan' target="_blank" rel="noreferrer"><img className="githublogo" src={GitHubLogo} alt="github-icon" /></a>
             </div>
