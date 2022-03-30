@@ -3,13 +3,12 @@ import './style.js';
 import { useState, useRef } from 'react';
 
 import Row from './Components/Row';
-import ProjectCard from './Components/ProjectCard';
 import GitHubLink from './Components/GitHubLink';
 
 import LogoImg from './assets/nano-tecnologia (1).png';
 import MenuImg from './assets/menu-aberto.png';
 import Curriculo from './assets/curriculo.pdf';
-import Background from './assets/Looper BG.svg';
+import Background from './assets/bg.png';
 import pedidoDeLanches from './assets/pedidolanches.png';
 import cadastroUsuario from './assets/cadastroprojeto.png';
 import meuPortfolio from './assets/portfolioprint.png';
@@ -29,7 +28,7 @@ import WppImg from './assets/wpp.png';
 import InImg from './assets/in.png';
 import GmailImg from './assets/gmail.png';
 
-import { Logo, Navegation, IntroductionSection, MainImg, AboutMeSection, ProjectSection, SkillsSection, ContactSection, Footer } from './style.js';
+import { Logo, Navegation, IntroductionSection, AboutMeSection, ProjectSection, SkillsSection, ContactSection, Footer } from './style.js';
 
 
 function App() {
@@ -57,11 +56,13 @@ function App() {
         <IntroductionSection>
           <h1>Olá, eu sou o <br /> Marcus!</h1>
           <p>Desenvolvedor Front-end ▪ React | JavaScript</p>
-          <a href={Curriculo} download className="download-curriculo">Download CV</a>
+          <a href={Curriculo} download className="download-curriculo"><p>Download CV</p></a>
           <GitHubLink href="https://github.com/marcusvinicius0" />
         </IntroductionSection>
 
-        <MainImg src={Background} className='mainimg' alt='mainimg' />
+        <div className="mainimg">
+          <img className="img" src={Background} />
+        </div>
 
         <AboutMeSection>
           <h2>Um pouco sobre mim</h2>

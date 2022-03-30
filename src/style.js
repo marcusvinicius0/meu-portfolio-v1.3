@@ -81,8 +81,8 @@ export const IntroductionSection = styled.div`
         @media (min-width: 757px) and (max-width: 845px){font-size: 45px; margin-top: 10vw}
         @media (min-width: 668px) and (max-width: 756px){font-size: 45px; margin-top: 10vw}
         @media (min-width: 577px) and (max-width: 667px){font-size: 45px; margin-top: 10vw}
-        @media (min-width: 488px) and (max-width: 576px){font-size: 45px; margin-top: 10vw}
-        @media (max-width: 487px){font-size: 45px; margin-top: 30vw}
+        @media (min-width: 488px) and (max-width: 576px){font-size: 40px; margin-top: 10vw}
+        @media (max-width: 487px){font-size: 40px; margin-top: 30vw}
     }
 
     p{
@@ -93,21 +93,19 @@ export const IntroductionSection = styled.div`
         @media (min-width: 757px) and (max-width: 845px){font-size: 20px}
         @media (min-width: 668px) and (max-width: 756px){font-size: 20px}
         @media (min-width: 577px) and (max-width: 667px){font-size: 20px}
-        @media (min-width: 488px) and (max-width: 576px){font-size: 20px}
-        @media (max-width: 487px){font-size: 20px}
+        @media (min-width: 488px) and (max-width: 576px){font-size: 15px}
+        @media (max-width: 487px){font-size: 15px}
     }
 
     .download-curriculo{
         background-color:#0F98AF;
         width: 143px;
-        height: 40px;
+        height: 55px;
         color: white;
-        font-size: 14px;
         text-decoration: none;
         border-radius: 10vw;
         text-align: center;
         font-size: 17px;
-        padding-top: 1.2vw;
         cursor: pointer;
         z-index: 1;
         @media (min-width: 757px) and (max-width: 845px){margin-left: -10vw}
@@ -115,6 +113,13 @@ export const IntroductionSection = styled.div`
         @media (min-width: 577px) and (max-width: 667px){margin-left: -15vw}
         @media (min-width: 488px) and (max-width: 576px){margin-left: -17vw}
         @media (max-width: 487px){margin-left: -17vw}
+
+        p{
+            padding-top: 1.8vw;
+            font-size: 18px;
+            @media (min-width: 488px) and (max-width: 576px){padding-top: 3.5vw};
+            @media (max-width: 487px){padding-top: 3.5vw};
+        }
     }
 
     img{
@@ -125,7 +130,7 @@ export const IntroductionSection = styled.div`
         &:hover{
             -webkit-transform: scale(1.1);
             transform: scale(1.1);
-            transition: 0.6s;
+            transition: 0.7s;
             opacity: 0.8;
         }
         @media (min-width: 1080px) and (max-width: 1115px){margin-top: -4.2vw; margin-left: 16vw}
@@ -135,16 +140,9 @@ export const IntroductionSection = styled.div`
         @media (min-width: 757px) and (max-width: 845px){margin-top: -5.5vw; margin-left: 10vw; width: 7vw}
         @media (min-width: 668px) and (max-width: 756px){margin-top: -6.2vw; margin-left: 10vw; width: 8vw}
         @media (min-width: 577px) and (max-width: 667px){margin-top: -6.5vw; margin-left: 10vw; width: 8vw}
-        @media (min-width: 488px) and (max-width: 576px){margin-top: -8.5vw; margin-left: 17vw; width: 8vw}
-        @media (max-width: 487px){margin-top: -8.5vw; margin-left: 17vw; width: 10vw}
+        @media (min-width: 488px) and (max-width: 576px){margin-top: -10vw; margin-left: 13vw; width: 10vw}
+        @media (max-width: 487px){margin-top: -10vw; margin-left: 15vw; width: 10vw}
     }
-`
-
-export const MainImg = styled.img`
-    width: 100%;
-    height: 100%;
-    opacity: 1;
-    margin-top: -44vw;
 `
 
 export const AboutMeSection = styled.div`
@@ -156,7 +154,7 @@ export const AboutMeSection = styled.div`
     h2{
         font-size: 3.5vw;
         color: #0F98AF;
-        margin-top: 0vw;
+        margin-top: 5vw;
         z-index: 2;
         @media (min-width: 757px) and (max-width: 845px){font-size: 35px}
         @media (min-width: 668px) and (max-width: 756px){font-size: 35px}
@@ -166,9 +164,9 @@ export const AboutMeSection = styled.div`
     }
 
     p{
-        margin-top: -8vw;
+        margin-top: -10vw;
         text-align: center;
-        font-size: 1.7vw;
+        font-size: 18px;
         padding: 10vw;
         @media (min-width: 935px) and (max-width: 1023px){font-size: 20px}
         @media (min-width: 846px) and (max-width: 934px){font-size: 18px}
@@ -209,51 +207,48 @@ export const ProjectSection = styled.div`
     }
 
     .container-project{
-    width: 315px;
-    height: 340px;
-    background: #121212;
-    box-shadow: 0 0.5rem 1rem rgb(0 0 0 / 15%);
-    color: white;
-    text-align: center;
-    font-size: 15px;  
-    margin-bottom: 1vw;
-
-    img{
         width: 315px;
-        height: 292px;
-        opacity: 0.9;
-    }
+        height: 340px;
+        background-color: rgb(41, 40, 40);
+        box-shadow: 0 0.5rem 1rem rgb(0 0 0 / 15%);
+        color: white;
+        text-align: center;
+        font-size: 15px;  
+        margin-bottom: 1vw;
 
-    p{
-        text-align: start;
-        margin-top: 0.4vw;
-        padding-left: 1vw;
-        color: #0F98AF;
-    }
+        img{
+            width: 100%;
+            height: 292px;
+            opacity: 0.9;
+            background-size: cover;
+        }
 
-    strong{
-        color: #FFF;
-    }
+        p{
+            text-align: start;
+            margin-top: -0.5vw;
+            padding-left: 1vw;
+            color: #0F98AF;
+        }
 
-    .githublogo{
-        width: 3vw;
-        height: 5vh;
-        position: absolute;
-        margin-left: 8vw;
-        margin-top: -3.7vw;
-        &:hover {
-        -webkit-transform: scale(1.1);
-        transform: scale(1.1);
-        transition: 0.3s
+        strong{
+            color: #FFF;
+        }
+
+        .githublogo{
+            width: 3vw;
+            height: 5vh;
+            position: absolute;
+            margin-left: 8vw;
+            margin-top: -4vw;
+            &:hover {
+            -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+            transition: 0.3s;
+            @media (min-width: 950px) and (max-width: 1115px){margin-left: 5vw}  
+        }
+    }
 }
-    }
-}
-
-    .github-img{
-        margin-top: 8vw;
-    }
-
-    hr{
+      hr{
         width: 90%;
         border: 1px solid #0F98AF;
         margin-top: 1vw;
@@ -354,14 +349,13 @@ export const ContactSection = styled.div`
         justify-content: flex-start;
         align-items: flex-start;
         flex-direction: column;
-        gap: 30px;
+        gap: 35px;
         margin-top: 3vw;
     }
 
     .contatos{
         margin-left: 4.5vw;
     }
-
 
     a{
         text-decoration: none;
@@ -382,7 +376,7 @@ export const ContactSection = styled.div`
     p{
         color: white;
         margin-left: 5vw;
-        margin-top: -2.5vw;
+        margin-top: -3vw;
         &:hover{
             color: #0F98AF;
             transition: 0.3s;
@@ -393,8 +387,8 @@ export const ContactSection = styled.div`
         @media (min-width: 757px) and (max-width: 845px){margin-top: -3.9vw; margin-left: 9vw} 
         @media (min-width: 668px) and (max-width: 756px){margin-top: -4vw; margin-left: 9vw}
         @media (min-width: 577px) and (max-width: 667px){margin-top: -4vw; margin-left: 9vw}
-        @media (min-width: 488px) and (max-width: 576px){margin-top: -6vw; margin-left: 11vw}
-        @media (max-width: 487px){margin-top: -6vw; margin-left: 11vw}
+        @media (min-width: 488px) and (max-width: 576px){margin-top: -7vw; margin-left: 12vw; font-size: 13px}
+        @media (max-width: 487px){margin-top: -6vw; margin-left: 11vw; font-size: 13px}
     }
 `
 
